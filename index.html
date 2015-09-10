@@ -278,8 +278,18 @@ and open the template in the editor.
                     </tr>
                     <tr>
                         <td>9 de Setembro</td>
-                        <td>Tecnologias em TIC, ver seccão Livro</td>
-                        <td>Projeto a nível nacional, ver o link a partir da página inicial</td>
+                        <td>Tecnologias em TIC</td>
+                        <td>Ver seccão Livro</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Projeto a nível nacional</td>
+                        <td>ver o link a partir da página inicial</td>
+                    </tr>
+                    <tr>
+                        <td>10 de Setembro</td>
+                        <td>Tecnologias em TIC</td>
+                        <td>Ver seccão Livro</td>
                     </tr>
                 </table> 
                 <p>
@@ -385,17 +395,117 @@ and open the template in the editor.
                 Podemos retirar um EAP, diretamente do site da Datapage:
                 <p>
                 <ul>
-                    <li>Initial design</li>
-                    <li>Scheduling</li>
-                    <li>Copy editing</li>
-                    <li>Artwork generation & scanning</li>
-                    <li>Proof reading/Quality control</li>
-                    <li>Proofing</li>
-                    <li>Author correspondence</li>
-                    <li>Status reporting</li>
-                    <li>Collation</li>
-                    <li>Indexing</li>
-                    <li>Delivery to printers/online</li>
+                    <li>Esboco initial</li>
+                    <li>Cronograma</li>
+                    <li>Editar a cópia original</li>
+                    <li>Elementos artísticos, criacão & scanning</li>
+                    <li>Leitura de versão para impressão/Controle de Qualidade</li>
+                    <li>Proposta de versão para impressão</li>
+                    <li>Correspondencia com o autor</li>
+                    <li>Relatório da situacão</li>
+                    <li>Indexacão</li>
+                </ul>
+                <p>O trabalho para implementar o projeto consiste em treino, para digamos, 5 empregados conduzirem o trabalho 
+                de preparar um livro para ser imprimido. </p>
+                <p>Vamos agora a ver onde estão Tecnologias do TIC, comecando por "Editar a cópia original".</p>
+                <table border="1" cellpadding="0" cellspacing="0" style=" width: 1200px;">
+                    <tr><td style=" width: 168px;"><strong>Componente</strong></td><td style=" width:40%"><strong>Tecnologia</strong></td><td style=" width:40%"><strong>Treino</strong></td></tr>
+                    <tr><td>Letra</td>
+                        <td>
+                            Letra em computador é ou "bit-mapped" ou "vector" desenhado.<br>
+                            A melhor qualidade está no "vector", como por exemplo letras da Adobe Tipo 1.<br>
+                            A TECNOLOGIA consiste em representar uma letra como um grupo de arcos (fechados) onde 
+                            cada arco é composto de curvas descritas de forma paramêtrica por polinómios do 
+                            segundo ou terceiro grau.<br>
+                            <img src="pix/letra-e.svg" alt="Letra e">
+                        </td>
+                        <td>
+                            O empregado não precisa conhecer a matemática interna, mas precisa ter nocões 
+                            das diferencas, conhecer os tipos principais, e quem os fabrica, se são livres ou têm de ser 
+                            comprados.<br>
+                            Mas MELHOR ainda se o empregado souber da matemática interna.<br>
+                            Teríamos MAIS QUALIDADE.
+                        </td></tr>
+                    <tr><td>Símbolo</td>
+                        <td>
+                            Depois das letras os símbolos de maior importância são os matemáticos, como os de derivada e integral.<br>
+                            A TECNOLOGIA é a mesma que para letras.
+                        </td>
+                        <td>
+                            Conhecimento básico dos símbolos em matemática.<br>
+                            Mas MELHOR ainda se o empregado souber matemática.<br>
+                        </td></tr>
+                    <tr>
+                        <td>Palavra</td>
+                        <td>
+                            Conjunto de letras e símbolos separados por espaco branco.
+                            A TECNOLOGIA consiste em registrar de forma encodada o espaco que existe entre letras.<br>
+                            Temos também ligacões (por exemplo entre "f" e "i"), em que o espaco é reduzido.
+                        </td>
+                        <td>O que acontece com espaco quando símbolos e letras coexistem.</td>
+                    </tr>
+                    <tr><td>Linha</td>
+                        <td>
+                            O problema da linha é 
+                            <ul>
+                                <li>distribuir o espaco entre palavras de forma estéticamente atractiva</li>
+                                <li>resolver o problema de hifenizar a última palavra quando a não existência de espaco nos obriga a 
+                                tal divisão.</li>
+                            </ul>
+                            A TECNOLOGIA aqui é uma de optimizacão matemática, e a traducão de regras de hifenacão em programacão.<br>
+                            Estas regras variam de língua para língua.
+                        </td>
+                        <td>
+                            Como alterar as regras predifinidas para aplicacão de espacos e hifenizacão, 
+                            para permitir que o computador possa encontrar uma solucão melhor com um pouco de ajuda humana.
+                            
+                        </td></tr>
+                    <tr><td>Parágrafo</td>
+                        <td>
+                            O parágrafo obriga a espaco vertical.<br>
+                            O parágrafo pode conter indentacão, espaco vertical adicional ou forcar mudanca de página.<br>
+                             A TECNOLOGIA aqui é simplesmente inserir o parágrafo, levando 
+                            em conta espaco existente na página currente e na próxima página
+                        </td>
+                        <td>
+                            Conhecer as regras que TeX aplica, e a consonância com práticas e tradicões 
+                            em português.<br>
+                            Ser capaz de forcar outra solucão que não a predefinida em TeX.
+                          </td></tr>
+                    <tr><td>Página</td>
+                        <td>
+                             A TECNOLOGIA aqui é simplesmente programacão para manter o computo de 
+                             páginas, saber do espaco usado e livre na página currente, as márginas, etc.
+                        </td>
+                        <td>
+                            Como alterar estes computos acima.
+                        </td>
+                        </tr>
+                </table>
+                <p>
+                A partir desta tabela vamos ver certas coisas:
+                <ul>
+                    <li>
+                        A TECNOLOGIA tem que estar ligada à formacão.
+                        Tecnologia, que não aparece como formacão deve ser tratada como <i>infraestrutura</i>.<br>
+                        Ninguém fala de electricidade, por exemplo, apesar de sempre ser necessária.
+                    </li>
+                    <li>
+                        Falar de TIC em geral, além de ser <i>fastento</i>, retira a atencão do importante.<br>
+                        O importante é a ÁREA de negócios (neste caso tipografia) a que se APLICA TIC.
+                    </li>
+                    <li>
+                        A área de negócio é uma VELHA tecnologia, a que estamos aplicando TIC.
+                    </li>
+                    <li>
+                        Aplicar um projeto a esta área, exige <i>cultura</i> e experiência da área.<br>
+                        Os nossos empregados, não conseguirão falar com o editor ou autor do livro, sem terem 
+                        este background.
+                    </li>
+                    <li>
+                        FUNDAMENTAL, é que o que aparece como TECNOLOGIA, são a MATEMÁTICA e PROGRAMCÃO,
+                        coisas que provavelmente não vêm à mente quando se fala TIC.
+                    </li>
                 </ul>
             </div>            
         </div>
